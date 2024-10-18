@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-# mi carta de presentacion
+# About me
 
 **Description:**
 
@@ -35,10 +35,21 @@ Here are some ideas to get you started:
 **Introducing me:**
 
 ```python
-class person:
-  def __init__(self, name, tecnology, favorite_topics):
-    self.name = name
-    self.tecnology = tecnology
-    self.favorite_topics = favorite_tecnology
-def __repr__(self):
-  return 'sometimes...'
+class DataScientist:
+    """
+    Represents a data scientist with Python skills.
+    """
+    def __init__(self, name, tech, hobbies):
+        self.name = name
+        self.tech = tech
+        self.hobbies = hobbies
+
+    def introduce_myself(self):
+        print(f"Hello, I'm {self.name} and I'm a data scientist.")
+        print(f"I work with technologies like: {', '.join(self.tech)}")
+        print(f"My interests include: {', '.join(self.hobbies)}")
+
+# Create an instance for yourself
+me = DataScientist("Franklin José Ramos Gutierrez", ["FastAPI", "Pandas", "Scikit-learn"], ["Machine Learning", "Data Analysis", "Data Visualization"])
+
+me.introduce_myself()
